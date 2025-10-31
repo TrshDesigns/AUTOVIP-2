@@ -16,7 +16,6 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
@@ -61,7 +60,6 @@
                     Inserta tu nombre completo usando el siguiente formato
                   </div>
                 </div>
-
                 <div class="mb-3">
                   <label for="emailInput" class="form-label">Correo</label>
                   <input
@@ -73,7 +71,6 @@
                     required
                   />
                 </div>
-
                 <div class="mb-3">
                   <label for="messageInput" class="form-label"
                     >Deja tu mensaje</label
@@ -86,7 +83,6 @@
                     required
                   ></textarea>
                 </div>
-
                 <button type="submit" class="btn btn-success">Enviar</button>
               </form>
             </div>
@@ -141,7 +137,7 @@
           </div>
         </div>
       </nav>
-      <div class="row my-5">
+      <div class="row my-4">
         <div class="col-6"><h2>Ventas</h2></div>
         <div class="col-6 text-end">
           <h6>
@@ -160,7 +156,7 @@
             | UYU/USD: 40
           </h6>
         </div>
-        <hr class="my-1" />
+        <hr class="my-1 p-6 hr-style" />
 
         <!-- Modal Filtro (Celular) -->
         <div
@@ -182,22 +178,19 @@
               </div>
               <div class="modal-body">
                 <form class="p-3 bg-light w-100">
-                  <hr />
+                  <hr class="p-6 hr-style"/>
                   <label><strong>Año</strong></label>
                   <select id="año-modal" class="form-select my-2">
                     <option value="">Seleccionar Año</option>
                   </select>
-
                   <label><strong>Marca</strong></label>
                   <select id="marca-modal" class="form-select my-2">
                     <option value="">Seleccionar Marca</option>
                   </select>
-
                   <label><strong>Modelo</strong></label>
                   <select id="modelo-modal" class="form-select my-2" disabled>
                     <option value="">Primero selecciona una marca</option>
                   </select>
-
                   <label><strong>Estado</strong></label>
                   <select id="estado-modal" class="form-select my-2">
                     <option value="">Seleccionar Estado</option>
@@ -226,77 +219,85 @@
           </div>
         </div>
 
-        <div class="col-xl-2 col-sm-3 my-4">
+        <div class="row my-1" id="content-wrapper">
           <!-- Botón celular -->
-          <div class="d-grid gap-2">
-            <button
-              id="filtrar-btn-mobile"
-              class="d-md-none btn btn-primary"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Filtrar
-            </button>
+          <div class="col-xl-3 col-lg-3 col-md-4 my-4 d-md-none">
+            <div class="d-grid gap-2">
+              <button
+                id="filtrar-btn-mobile"
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Filtrar
+              </button>
+            </div>
           </div>
 
           <!-- Filtro escritorio-->
-          <form class="p-3 bg-light d-none d-md-block">
-            <h4>Filtro</h4>
-            <hr />
-            <label><strong>Año</strong></label>
-            <select id="año" class="form-select my-2">
-              <option value="">Seleccionar Año</option>
-            </select>
-
-            <label><strong>Marca</strong></label>
-            <select id="marca" class="form-select my-2">
-              <option value="">Seleccionar Marca</option>
-            </select>
-
-            <label><strong>Modelo</strong></label>
-            <select id="modelo" class="form-select my-2" disabled>
-              <option value="">Primero selecciona una marca</option>
-            </select>
-
-            <label><strong>Estado</strong></label>
-            <select id="estado" class="form-select my-2">
-              <option value="">Seleccionar Estado</option>
-              <option value="1">Nuevo</option>
-              <option value="0">Usado</option>
-            </select>
-
-            <button type="button" class="btn btn-warning my-1 w-100 text-white">
-              <strong>Filtrar</strong>
-              <svg
-                width="20px"
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="col-xl-3 col-lg-3 col-md-4 my-2 sticky-top sticky-filter-container d-none d-md-block"
+          >
+            <form class="p-3 bg-light h-100">
+              <h4>Filtro</h4>
+              <hr class="p-6 hr-style"/>
+              <label><strong>Año</strong></label>
+              <select id="año" class="form-select my-2">
+                <option value="">Seleccionar Año</option>
+              </select>
+              <label><strong>Marca</strong></label>
+              <select id="marca" class="form-select my-2">
+                <option value="">Seleccionar Marca</option>
+              </select>
+              <label><strong>Modelo</strong></label>
+              <select id="modelo" class="form-select my-2" disabled>
+                <option value="">Primero selecciona una marca</option>
+              </select>
+              <label><strong>Estado</strong></label>
+              <select id="estado" class="form-select my-2">
+                <option value="">Seleccionar Estado</option>
+                <option value="1">Nuevo</option>
+                <option value="0">Usado</option>
+              </select>
+              <button
+                type="button"
+                class="btn btn-warning my-1 w-100 text-white"
               >
-                <path
-                  d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z"
-                  stroke="#ffffff"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M20.9992 21L14.9492 14.95"
-                  stroke="#ffffff"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </form>
-        </div>
+                <strong>Filtrar</strong>
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z"
+                    stroke="#ffffff"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.9992 21L14.9492 14.95"
+                    stroke="#ffffff"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
 
-        <!-- Contenedor de Autos -->
-        <div id="cars-container" class="col-md-9 col-sm-12 p-2">
-          <div class="row"></div>
+          <!-- Contenedor de los Autos -->
+          <div
+            id="cars-container"
+            class="col-xl-9 col-lg-9 col-md-8 col-sm-12 p-2"
+          >
+            <div class="row"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -314,7 +315,7 @@
           </div>
           <div class="col-md-3">
             <ul>
-              <li><a href="ventas0km.html">Venta 0km</a></li>
+              <li><a href="ventas0km.html">Venta | 0km</a></li>
               <li><a href="ventas.html">Venta Usados</a></li>
             </ul>
           </div>
@@ -332,7 +333,7 @@
             </ul>
           </div>
           <div class="col-md-3">
-            <p style="color: #ddd">Copyright &copy; AutoVIP 2023</p>
+            <p style="color: #ddd">Copyright © AutoVIP 2023</p>
           </div>
         </div>
       </div>

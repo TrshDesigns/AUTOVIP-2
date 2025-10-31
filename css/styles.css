@@ -108,6 +108,25 @@ h6 {
   color: #eeeeee;
   text-decoration: none;
 }
-.container{
-  max-width: 90vw!important;
+
+.hr-style{
+  padding: 3px!important;
+  height: 3px;
+  box-shadow: #22222231 5px 1px 10px;
+  border-radius: 10px!important;
+}
+
+/*ESTILOS ESPECIFICOS PARA FILTRO STICKY*/
+.container {
+  max-width: 90vw !important;
+}
+.sticky-filter-container {
+  height: fit-content; 
+  top: 5rem; 
+  z-index: 1020; 
+  align-self: start; 
+}
+
+#content-wrapper {
+  padding-top: 2rem;
 }
