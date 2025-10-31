@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Automotora VIP</title>
+
+    <!-- CSS de Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--BOOSTRAP ICONS-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contacto-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Contacto</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body position-relative">
+            <form class="">
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Nombre Completo</label>
+                <input
+                  type="text"
+                  maxlength="40"
+                  class="form-control"
+                  placeholder="ingresa nombre completo"
+                  id="fullnameinput"
+                  aria-describedby="fullnameHelp"
+                />
+                <div id="formNameInstructions" class="form-text">
+                  Inserta tu nombre completo usando el siguiente formato
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Correo</label>
+                <input
+                  type="email"
+                  placeholder="Inserta tu email"
+                  required="true"
+                  class="form-control"
+                  id="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="messageInput" class="form-label"
+                  >Deja tu mensaje</label
+                >
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  rows="3"
+                  required="true"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav id="header" class="navbar navbar-expand-md fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            id="header-logo"
+            src="img/automotora_vip_logo.png"
+            alt="AutoVIP"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#links"
+          aria-controls="links"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="links" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="ventas0km.html">Venta 0km</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ventas.html">Ventas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contacto-modal"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="home">
+      <div id="home-carousel">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/cars_home/audi_1.jpg"
+                class="d-block w-100"
+                alt="audi model 1"
+              />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded-3"
+              >
+                <h5>Audi</h5>
+                <p>Siente la comodidad del nuevo Audi Q5 o Q3</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/cars_home/audi_2.jpg"
+                class="d-block w-100"
+                alt="Auto Audi en autopsita imagen de estudio"
+              />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded-3"
+              >
+                <h5>Audi</h5>
+                <p>Velocidad crucero autonoma en autopistas</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/cars_home/bentley_1.jpg"
+                class="d-block w-100"
+                alt="Auto bentley rojo posado en las rocas"
+              />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded-3"
+              >
+                <h5>Bentley</h5>
+                <p>Lujo excepcional junto a los mejores materiales</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/cars_home/bmw_1.jpg"
+                class="d-block w-100"
+                alt="Vehiculo BMW color gris transitando por una carretera arida"
+              />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded-3"
+              >
+                <h5>BMW</h5>
+                <p>El balance perfecto de potencia. sin compromisos</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/cars_home/volvo_1.jpg"
+                class="d-block w-100"
+                alt="Auto volvo s60 de color azul circulando en una carretera costera"
+              />
+              <div
+                class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded-3"
+              >
+                <h5>Volvo</h5>
+                <p>La mayor seguridad</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="page-header">
+          Bienvenido a <span>AUTO</span><strong>VIP</strong>
+        </h1>
+
+        <hr />
+
+        <div>
+          <!--Continuar aquí-->
+          <div class="row my-2">
+            <div class="col-md-4 col-sm-12">
+              <div class="card mb-5">
+                <div class="card-header bg-secondary.bg-gradient">
+                  <p>
+                    <i class="bi bi-car-front fs-3"></i
+                    ><span class="ms-3">Ventas 0kms</span>
+                  </p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Nos especializamos en brindar un servicio de atención al
+                    cliente excepcional, específicamente para satisfacer las
+                    necesidades de nuestros distinguidos clientes.
+                  </p>
+                  <a href="/ventas0km.html" class="btn btn-outline-secondary"
+                    >Ver autos</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="card mb-5">
+                <div class="card-header">
+                  <p>
+                    <i class="bi bi-megaphone fs-3"></i
+                    ><span class="ms-3">Ventas usados</span>
+                  </p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Nos especializamos en la venta de vehículos usados de alta
+                    calidad, ofreciendo a nuestros clientes una experiencia de
+                    compra confiable y transparente.
+                  </p>
+                  <a href="/ventas.html" class="btn btn-outline-secondary"
+                    >Ver autos</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="card mb-5">
+                <div class="card-header">
+                  <p>
+                    <i class="bi bi-file-earmark-medical fs-3"></i
+                    ><span class="ms-3"></span>Tramites
+                  </p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Nos especializamos en ofrecer un servicio integral y
+                    eficiente para la gestión de todo tipo de trámites
+                    vehiculares.
+                  </p>
+                  <a href="#" class="btn btn-outline-secondary"
+                    >Realizar tramite</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              id="footer-logo"
+              src="img/automotora_vip_logo.png"
+              alt="AutoVIP"
+            />
+          </div>
+
+          <div class="col-md-3">
+            <ul>
+              <li><a href="ventas0km.html">Venta 0km</a></li>
+              <li><a href="ventas.html">Venta Usados</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul>
+              <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contacto-modal"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <p style="color: #ddd">Copyright &copy; AutoVIP 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boostrap (no tocar) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

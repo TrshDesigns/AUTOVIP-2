@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <title>Sobre Nosotros | Automotora VIP</title>
+
+    <!-- CSS de Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contacto-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Contacto</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body position-relative">
+            <form class="">
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Nombre Completo</label>
+                <input
+                  type="text"
+                  maxlength="40"
+                  class="form-control"
+                  placeholder="ingresa nombre completo"
+                  id="fullnameinput"
+                  aria-describedby="fullnameHelp"
+                />
+                <div id="formNameInstructions" class="form-text">
+                  Inserta tu nombre completo usando el siguiente formato
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Correo</label>
+                <input
+                  type="email"
+                  placeholder="Inserta tu email"
+                  required="true"
+                  class="form-control"
+                  id="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="messageInput" class="form-label"
+                  >Deja tu mensaje</label
+                >
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  rows="3"
+                  required="true"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav id="header" class="navbar navbar-expand-md fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            id="header-logo"
+            src="img/automotora_vip_logo.png"
+            alt="AutoVIP"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#links"
+          aria-controls="links"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="links" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="ventas0km.html">Venta 0km</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ventas.html">Ventas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contacto-modal"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="my-4">Sobre Nosotros</h1>
+      <!--Continuar aquí-->
+      <div class="row">
+        <div class="col-lg-5 col-sm-12">
+          <img class="responsive-img w-100" src="/img/about_us/about.jpg" />
+        </div>
+        <div class="col-lg-7 col-sm-12 my-4">
+          <img id="header-logo" src="/img/AUTOVIP.png" alt="AutoVIP" />
+          <p class="my-3">
+            es una empresa líder en el sector automotriz, dedicada a ofrecer
+            soluciones integrales para la compra, venta y gestión de trámites de
+            vehículos nuevos y usados. Fundada con la misión de simplificar y
+            optimizar la experiencia de adquirir un automóvil. Nuestra Misión
+            Facilitar el acceso a vehículos de calidad, brindando un servicio
+            personalizado que combina tecnología, asesoría experta y una amplia
+            red de contactos en la industria automotriz.
+          </p>
+        </div>
+        <div class="col-12 my-5">
+          <h2 class="text-start">Nuestro equipo</h2>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-4 col-sm-12 my-2">
+          <div class="card">
+            <img
+              src="/img/about_us/cofounder_1.jpg"
+              class="card-img-top"
+              alt="cofounder_1"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Juan Pérez</h5>
+              <p class="card-text">
+                <small class="text-body-secondary">Co-fundador</small>
+              </p>
+              <p class="card-text">
+                Con más de 15 años de experiencia en el sector automotriz, Juan
+                aporta su pasión por los vehículos y su expertise en gestión
+                empresarial. Su visión estratégica ha sido clave para posicionar
+                a AUTOVIP como líder en la compra y venta de autos nuevos y
+                usados.
+              </p>
+              <div class="d-inline">
+                <i class="bi bi-linkedin fs-2 mx-1 text-primary"></i
+                ><i class="bi bi-twitter fs-2 mx-1 text-primary"></i
+                ><i class="bi bi-facebook fs-2 mx-1 text-primary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 my-2">
+          <div class="card">
+            <img
+              src="/img/about_us/cofounder_2.jpg"
+              class="card-img-top"
+              alt="cofounder_2"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Maria Rodríguez</h5>
+              <p class="card-text">
+                <small class="text-body-secondary">Co-fundadora</small>
+              </p>
+              <p class="card-text">
+                María Rodríguez, Co-Fundadora: María, experta en finanzas y
+                desarrollo de negocios, une su talento para optimizar procesos y
+                ofrecer soluciones de financiamiento accesibles. Su enfoque en
+                el cliente ha transformado la experiencia de compra en AUTOVIP.
+              </p>
+              <div class="d-inline">
+                <i class="bi bi-linkedin fs-2 mx-1 text-primary"></i
+                ><i class="bi bi-twitter fs-2 mx-1 text-primary"></i
+                ><i class="bi bi-facebook fs-2 mx-1 text-primary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 my-2">
+          <div class="card">
+            <img
+              src="/img/about_us/cofounder_3.jpg"
+              class="card-img-top"
+              alt="cofounder_3"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Juan Pérez</h5>
+              <p class="card-text">
+                <small class="text-body-secondary">Co-fundador</small>
+              </p>
+              <p class="card-text">
+                Con más de 15 años de experiencia en el sector automotriz, Juan
+                aporta su pasión por los vehículos y su expertise en gestión
+                empresarial. Su visión estratégica ha sido clave para posicionar
+                a AUTOVIP como líder en la compra y venta de autos nuevos y
+                usados.
+              </p>
+              <div class="d-inline">
+                <i class="bi bi-linkedin fs-2 mx-1 text-primary"></i
+                ><i class="bi bi-twitter fs-2 mx-1 text-primary"></i
+                ><i class="bi bi-facebook fs-2 mx-1 text-primary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img
+              id="footer-logo"
+              src="img/automotora_vip_logo.png"
+              alt="AutoVIP"
+            />
+          </div>
+
+          <div class="col-md-3">
+            <ul>
+              <li><a href="ventas.html">Venta 0km</a></li>
+              <li><a href="ventas.html">Venta Usados</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <ul>
+              <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contacto-modal"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <p style="color: #ddd">Copyright &copy; AutoVIP 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Boostrap (no tocar) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
