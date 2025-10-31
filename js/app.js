@@ -162,9 +162,13 @@ function mostrarListaAutos(listaAutos) {
       " " +
       auto.model +
       '"/>';
-    if (esNuevo)
+    if (esNuevo) {
       html +=
         '<p class="position-absolute top-0 start-0 btn btn-warning m-2 rounded-2 text-white fw-bold">Nuevo</p>';
+    } else {
+      html +=
+        '<p class="position-absolute top-0 start-0 btn btn-success m-2 rounded-2 text-white fw-bold">Usado</p>';
+    }
     html +=
       '</div></div><div class="col-lg-7 col-sm-12 mb-4"><div class="row p-2"><div class="col-6"><h3>' +
       auto.brand +
