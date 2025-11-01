@@ -157,7 +157,7 @@ function mostrarListaAutos(listaAutos) {
     html +=
       '<div class="col-lg-5 col-sm-12 mb-4"><div class="position-relative"><img src="' +
       auto.image +
-      '" class="img-fluid border border-secondary-subtle p-1 w-100" alt="' +
+      '" class="img-fluid border rounded border-secondary-subtle t w-100" alt="' +
       auto.brand +
       " " +
       auto.model +
